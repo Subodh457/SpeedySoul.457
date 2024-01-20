@@ -1,0 +1,583 @@
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+    background: #f6f6f6;
+}
+
+.navbar a{
+    display: flex;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+.logo span{
+    color: red;
+}
+
+.navbar a{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.navbar a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    margin-left: 800px;
+    margin-right: 100px;
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
+    background: white;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+/* -- Navigation bar CSS -- */
+
+/*.super .navbar-brand{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 400;
+    gap: 2rem;
+}
+.super .navbar-brand span{
+    color: red;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.navbar{
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+.navbar :hover{
+    color: red;
+    column-gap: 2rem;
+    border-bottom: 3px solid red;
+}
+
+header .shadow{
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 20%);
+    transition: 0.5s;
+}*/
+
+/* -- Home Page CSS -- */
+
+section{
+    padding: 0 0 0;
+
+}
+
+.home{
+    margin: auto;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    background-image: url(images/porsche.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: black;
+}
+
+.H-one{
+    color:whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+   
+}
+.S-style{
+    color: rgb(176, 94, 49);
+    font-style: italic;
+}
+.home-text{
+    padding-left: 250px;
+    padding-bottom: 230px;;
+}
+.home-text h1{
+    font-size: 3rem;
+}
+.home-text span{
+    color: rgb(236, 84, 38);
+}
+.home-text p{
+    font-size: 1rem;
+    font-weight: 1rem;
+    margin:0.5rem 0 1.5rem;
+}
+.home-text a{
+    border-radius: 5%;
+    background-color: skyblue;
+    padding: 10px 22px;
+    font-weight: 400;
+}
+.home-text a:hover,
+.btn{
+    background-color: rgb(15, 102, 184);
+}
+
+/*--Cars Section--*/
+
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    font-weight: 500;
+    color: red;
+}
+
+.heading p{
+    font-weight: 300;
+    font-size: 0.938rem;
+}
+
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+.cars-container .box{
+    flex: 7 10 20 rem;
+    position: relative;
+    height: 250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cars-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cars-container .box h2{
+    position:absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.cars-container .box h2:hover{
+    background: rgb(202, 188, 147);
+}
+
+/*--About Section--*/
+
+.about{
+   display: flex;
+   margin: auto;
+   margin-top: 3rem;
+   width: 100%;
+   min-height: 800px;
+   background-image: url(images/about.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ 
+}
+
+.about-text{
+    text-align: left;
+    margin-right: 500px;
+    color: aliceblue;
+    margin-top: 140px;
+    margin-left: 100px;
+}
+
+.about-text h6{
+    color: red;
+    font-weight: 900;
+}
+
+.about-text span{
+    color: red;
+    font-weight: 600;
+}
+
+.about-text a{
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 22px;
+    font-weight: 400;
+}
+
+.about-text a:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.about-text .btn:hover{
+    color: red;
+}
+
+/*--Parts Section--*/
+
+.parts{
+    margin-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+}
+
+.parts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.parts-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    border-radius: 0.5rem;
+}
+
+.parts-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.parts-container .box h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.parts-container .btn{
+    background-color: rgb(129, 216, 250);
+    max-width: 120px;
+    margin-top: 5px;
+} 
+
+.parts-container span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: red;
+}
+
+.parts-container .box .details{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    margin-top: 120px;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color :black;
+}
+
+.parts-container .box .details:hover{
+    color: red;
+}
+
+/*--Blog Section--*/
+.blog-sec .blogg{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.blog-sec .bloo{
+    color: red;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.blog-container .box{
+    flex: 1 1 13rem;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+.blog-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem;   
+}
+
+.blog-container .box:hover{
+    background: #f6f6f6;
+}
+
+.blog-container .box span{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.blog-container h3{
+    font-size: 1.5rem;
+}
+
+.blog-container .box p{
+    font-size: 0.938rem;
+    margin: 4px 0;
+    margin-bottom: 15px;
+}
+
+.blog-container .box .btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: black;
+    background: rgb(129, 216, 250);
+    max-width: 140px;
+}
+
+/*--Footer Section--*/
+
+.footer{
+    background: black;
+    color: #f6f6f6;
+    border-top: 2px solid red;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 15px;
+}
+
+.footer-container .logo{
+    color: white;
+    font-size: larger;
+    font-weight: 400;   
+    margin-top: 10px;
+}
+
+.footer-container .logo span{
+    color: red;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    text-align: center;
+}
+
+.social a{
+    font-size: 24px;
+    color: antiquewhite;
+    margin-right: 1rem;
+}
+
+.footer-box{
+    margin: 15px;
+}
+
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-box a, .footer-box p{
+    color: #818181;
+    margin-bottom: 10px;
+}
+
+.footer-box a:hover{
+    color: red;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: wheat;
+    background: black;
+}
+
+/*--Making responsive--*/
+
+@media (max-width: 1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 991px){
+    .super{
+        padding: 15px 20px;
+    }
+    section{
+        padding: 3rem 0 1rem;
+    }
+    .hoome-text{
+        padding-left: 2rem;
+    }
+    .home-text h1{
+        font-size: 2.1rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15, 54, 55 / 20%);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.6s;
+    }
+    .navbar a{
+        display: block;
+        padding: 15px;
+    }
+    .navbar a:hover,
+    .navbar .active{
+        border-bottom: none;
+        background: black;
+        color: beige;
+    }
+    .navbar .active{
+        clip-path: circle(144% at 0% 0%);
+    }
+    .blog-container .box{
+        padding: 4px;
+    }
+}
+@media (max-width: 727px){
+    .heading span{
+        font-size: 0.9rem;
+    }
+    .heading h2{
+        font-size: 1.4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .about-text h2{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 607px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 727px){
+    .home{
+        min-height: 500px;
+
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .home-text p br{
+        display: contents;
+    }
+}
